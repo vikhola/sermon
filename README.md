@@ -1,5 +1,9 @@
 # @vikhola/sermon
-
+- [Validation](https://github.com/vikhola/sermon/blob/main/docs/validation.md)
+- [Processing](https://github.com/vikhola/sermon/blob/main/docs/processing.md)
+- [Formatting](https://github.com/vikhola/sermon/blob/main/docs/formatting.md)
+- [Logger](https://github.com/vikhola/sermon/blob/main/docs/channels.md)
+- [Channels](https://github.com/vikhola/sermon/blob/main/docs/channels.md)
 
 
 ## About
