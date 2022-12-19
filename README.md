@@ -61,7 +61,7 @@ So now we can log message to the console and to the file. But what to do if we w
 const { Logger, ErrorLevel, LoggerConsoleChannel, LoggerFileChannel } = require("@vikhola/sermon")
 
 const theLogger = new Logger()
-const theFileChannel = new LoggerFileChannel("./", "test")
+const theFileChannel = new LoggerFileChannel("./logs", "test")
 const theConsoleChannel = new LoggerConsoleChannel({levels: ErrorLevel}) 
 
 theLogger.addChannel(theFileChannel)
@@ -104,7 +104,7 @@ function groupValidator(message) {
 
 const theLogger = new Logger()
 
-const theFileChannel = new LoggerFileChannel("./", "test")
+const theFileChannel = new LoggerFileChannel("./logs", "test")
 const theConsoleChannel = new LoggerConsoleChannel()
 
 theFileChannel.validator.set("group", groupValidator)
@@ -127,7 +127,7 @@ function groupValidator(message) {
 
 const theLogger = new Logger()
 const theValidator = new LoggerValidator()
-const theFileChannel = new LoggerFileChannel("./", "test", {validator: theValidator, context: {group}})
+const theFileChannel = new LoggerFileChannel("./logs", "test", {validator: theValidator, context: {group}})
 const theConsoleChannel = new LoggerConsoleChannel()
 
 theLogger.addChannel(theFileChannel)
