@@ -10,7 +10,12 @@
 @vikhola/sermon is a lightweight, easy to use TypeScript and JavaScript logger utility for creating simple and/or complex logging systems. 
 
 ## Motivation
-Motivation of creating this package was a provide simple and clear logging utility. Package had to meet several criteria, have an easy-to-understand implementation, a minimal with completely transparency list of dependencies and realize base [rfc5424](https://www.rfc-editor.org/rfc/rfc5424) standart.
+Motivation of creating this package:
+
+- minimal and completely transparency list of dependencies
+- have an easy-to-understand implementation. 
+- realize base [rfc5424](https://www.rfc-editor.org/rfc/rfc5424) standart.
+- provide simple and clear logging utility with some features like compression and some others. 
 
 ## Installation
 ```sh
