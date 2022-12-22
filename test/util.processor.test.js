@@ -1,4 +1,5 @@
 const assert = require("node:assert")
+const os = require("node:os")
 const { describe, test } = require('node:test');
 const util = require("node:util")
 const { randomUUID } = require("node:crypto")
@@ -9,7 +10,7 @@ const { LoggerProcessor } = require("../lib/utils/util.processor.js");
 // Enviroment
 
 const TEST_TEXT_MESSAGE = `text message`
-const TEST_CONTEXT = { id: randomUUID() }
+const TEST_CONTEXT = {  id: randomUUID()}
 
 // Tests
 
