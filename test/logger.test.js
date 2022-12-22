@@ -222,7 +222,7 @@ test(`process LoggerChannel error`, function(t, done) {
     const theWritableChannelMock = new WritableChannelMock((chunk) => {
         assert.ok(chunk instanceof LoggerMessage, `chunk should be instance of LoggerMessage`)
         assert.equal(chunk.get("pub"), theReadableChannel.id, `chunk id property should be equal to ${theReadableChannel.id}`)
-        assert.deepEqual(chunk.get(`msg`), new LoggerTestError, `chunk should contain msg property equal to ${"LoggerTestError"}}`)
+        assert.deepEqual(chunk.get(`msg`), new LoggerTestError().message, `chunk should contain msg property equal to ${"LoggerTestError"}}`)
         assert.deepStrictEqual(chunk.get(`level`), LoggerLevels.CriticalLevel, `dto should be sended with critical level`)
         done()
     })
