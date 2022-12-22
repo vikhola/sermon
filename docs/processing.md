@@ -1,5 +1,5 @@
 # Processing
-The @vikhola/sermon processing provides the message transforming. This is the second stage of message processing. The message transforming executes inside the channel or logger instances, takes a payload, convert it to the logger message and starts message transforming, where adds, updates and removes message props.
+The sermon processing provides the message transforming. This is the second stage of message processing. The message transforming executes inside the channel or logger instances, takes a payload, convert it to the logger message and starts message transforming, where adds, updates and removes message props.
 
 ## Initialize 
 The initialization of logger processor is easy and it constructor doesn`t accept any parameters.

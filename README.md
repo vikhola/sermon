@@ -1,4 +1,4 @@
-# @vikhola/sermon
+# Sermon
 - [Validation](https://github.com/vikhola/sermon/blob/main/docs/validation.md)
 - [Processing](https://github.com/vikhola/sermon/blob/main/docs/processing.md)
 - [Formatting](https://github.com/vikhola/sermon/blob/main/docs/formatting.md)
@@ -7,7 +7,7 @@
 
 
 ## About
-@vikhola/sermon is a lightweight, easy to use TypeScript and JavaScript logger utility for creating simple and/or complex logging systems. 
+The sermon is a lightweight, easy to use TypeScript and JavaScript logger utility for creating simple and/or complex logging systems. 
 
 ## Motivation
 Motivation of creating this package:
@@ -19,11 +19,11 @@ Motivation of creating this package:
 
 ## Installation
 ```sh
-$ npm i @vikhola/sermon
+$ npm i sermon
 ```
 
 ## The Basics
-Let’s take a look at the basic usage and APIs of @vikhola/sermon with JavaScript:
+Let’s take a look at the basic usage and APIs of sermon with JavaScript:
 
 ### Example 1: One destination logging
 ```js 

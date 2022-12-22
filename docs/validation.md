@@ -1,5 +1,5 @@
 # Validation
-The @vikhola/sermon validation provides logger message validation. This is first stage of message processing. The message validation executes inside the channel or logger instances, takes a payload, and return result of validation, false if validation was failed and true if successful.
+The sermon validation provides logger message validation. This is first stage of message processing. The message validation executes inside the channel or logger instances, takes a payload, and return result of validation, false if validation was failed and true if successful.
 
 ## Initialize 
 The initialization of logger validator is easy and it constructor doesn`t accept any parameters.

@@ -23,7 +23,7 @@
   "homepage": "https://github.com/vikhola/sermon",
   "keywords": [
     "sermon",
-    "@vikhola/sermon",
+    "vikhola",
     "winston",
     "logger",
     "logging",
@@ -34,7 +34,8 @@
     "loglevel",
     "tools",
     "json",
-    "stream"
+    "stream",
+    "@vikhola/sermon"
   ],
   "author": " <sabaziose@gmail.com> (https://github.com/SabaziosD)",
   "license": "MIT",

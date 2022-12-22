@@ -1,8 +1,8 @@
 # Channels
-The @vikhola/sermon channels provides easy and flexible interface to both of writable and readable interaction with underlying resource. The writable interface helps with current process output like logging to file, console etc. The readable interface helps to interact with different system sources like receiving messages from cluster worker etc., and then send them directly to the logger.
+The sermon channels provides easy and flexible interface to both of writable and readable interaction with underlying resource. The writable interface helps with current process output like logging to file, console etc. The readable interface helps to interact with different system sources like receiving messages from cluster worker etc., and then send them directly to the logger.
 
 ## LoggerChannel 
-The project-november/sermon LoggerChannel the class from which all others default channels inherit, by itself implements the basic node.js `Duplex` stream, which allow easy usage and predictable behavior. Class also add some functionality, such as validation, message processing, and its formatting using basic utilities. All in the channel fair for all it child classes.
+The sermon LoggerChannel the class from which all others default channels inherit, by itself implements the basic node.js `Duplex` stream, which allow easy usage and predictable behavior. Class also add some functionality, such as validation, message processing, and its formatting using basic utilities. All in the channel fair for all it child classes.
 
 ### Initialize
 In constructor LoggerChannel accept `option` object which can be used in a very wide range of things, from validation to message processing or inner channel logic:
@@ -44,7 +44,7 @@ theChannel.write("message")
 ```
 
 ## LoggerConsoleChannel 
-The @vikhola/sermon LoggerConsoleChannel provides simple logging to the console with optional colorize. 
+The sermon LoggerConsoleChannel provides simple logging to the console with optional colorize. 
 
 ### Initialize
 The console channel accepts in consturctor same `option` object as in the channel but with one additional property.
@@ -69,7 +69,7 @@ theLogger.error("hello John!")
 ```
 
 ## LoggerFileChannel
-The @vikhola/sermon LoggerFileChannel helps to interact with file logs, their writing, optional rotation and file compressing. File rotation can take place according to both the file size and time limits, optionally, after the file rotation has begun, it can be compressed to `.gz' format which allows you to have full-fledged logs.
+The sermon LoggerFileChannel helps to interact with file logs, their writing, optional rotation and file compressing. File rotation can take place according to both the file size and time limits, optionally, after the file rotation has begun, it can be compressed to `.gz' format which allows you to have full-fledged logs.
 
 ### Initialize
 The file channel accepts three arguments it is `dir`, `filename` and `options`, first two arguments is required, they define where logs will be writted and stored. 
@@ -177,7 +177,7 @@ theFileChannel.write("hello John!")
 ```
 
 ## LoggerClusterChannel 
-The @vikhola/sermon LoggerClusterChannel helps to interact between processes. It`s can be useful in situations where need to log messages between multiple processes, example, log in single file from multiple childs.
+The sermon LoggerClusterChannel helps to interact between processes. It`s can be useful in situations where need to log messages between multiple processes, example, log in single file from multiple childs.
 
 ### Initialize
 LoggerClusterChannel  accepts two arguments it is `worker`, and `options`.

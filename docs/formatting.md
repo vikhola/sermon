@@ -1,5 +1,5 @@
 # Formatting
-The @vikhola/sermon formatting provides logger message formatting to the rfc5424 string. This is the third stage of message processing. The formatter takes string template with identifiers separated by a percent sign and handlers bind to them. When message processing begins, the identifier is replaced by the result of the handler attached to it. If no handler is attached, the identifier will be replaced by the property from the logger message, but if there is no property either, identifier will be replaced by "-".
+The sermon formatting provides logger message formatting to the rfc5424 string. This is the third stage of message processing. The formatter takes string template with identifiers separated by a percent sign and handlers bind to them. When message processing begins, the identifier is replaced by the result of the handler attached to it. If no handler is attached, the identifier will be replaced by the property from the logger message, but if there is no property either, identifier will be replaced by "-".
 
 ## Initialize
 LoggerFormatter accepts in consturctor a string template into which the passed in execute method message will be converted. If no template is present rfc5424 template will be used.

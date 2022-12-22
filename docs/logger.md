@@ -1,6 +1,6 @@
 # Logger
 
-The @vikhola/sermon Logger can be both an entry point for the entire log system, and as a subsystem relay which takes messages and send them to the underlying channels. 
+The sermon Logger can be both an entry point for the entire log system, and as a subsystem relay which takes messages and send them to the underlying channels. 
 
 ## Initialize
 The logger options could change behavior depending on how logger instance is used. In relay mode when channel added to different logger instance most of them keep the same functionality as in the logger channel, but if the logger instance uses as entry point some can be unused or acquire additional functionality.
