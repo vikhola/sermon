@@ -19,7 +19,7 @@ Motivation of creating this package:
 
 ## Installation
 ```sh
-$ npm i sermon
+$ npm i @vikhola/sermon
 ```
 
 ## The Basics
