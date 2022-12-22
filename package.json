@@ -1,6 +1,6 @@
 {
   "name": "@vikhola/sermon",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "A minimalistic and flexible logger utility",
   "main": "main.js",
   "directories": {
