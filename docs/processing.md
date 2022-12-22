@@ -19,6 +19,43 @@ theProcessor.set("handler", handler)
 ```
 Also several handlers available in the processor from the start. Every of this handler will not change message if their prop is already present.
 
+- The key `procid` has a handler which bind message `procid` to the  context procid where it belongs to or to current node.js process id.
+
+	```js
+const theProcessor = new LoggerProcessor()
+const theConsoleChannel = new LoggerConsoleChannel({processor: theProcessor, context: {procid: 100}})
+theConsoleChannel.write("message")
+	```
+- The key `version` has a handler which bind message `version` to the context facility where it belongs to or to 1.
+
+	```js
+const theProcessor = new LoggerProcessor()
+const theConsoleChannel = new LoggerConsoleChannel({processor: theProcessor, context: {version: "1.0.0"}})
+theConsoleChannel.write("message")
+	```
+- The key `facility` has a handler which bind message `facility` to the context facility where it belongs to or to 1. Parameter facility is uses under priority calculation.
+
+	```js
+const theProcessor = new LoggerProcessor()
+const theConsoleChannel = new LoggerConsoleChannel({processor: theProcessor, context: {facility: 200}})
+theConsoleChannel.write("message")
+	```
+
+- The key `app_name` has a handler which bind message `app_name` to the context app_name where it belongsif it present.
+
+	```js
+const theProcessor = new LoggerProcessor()
+const theConsoleChannel = new LoggerConsoleChannel({processor: theProcessor, context: {app_name: "application"}})
+theConsoleChannel.write("message")
+	```
+
+- The key `hostname` has a handler which bind message `hostname` to the context hostname where it belongs to or to current node.js hostname.
+
+	```js
+const theProcessor = new LoggerProcessor()
+const theConsoleChannel = new LoggerConsoleChannel({processor: theProcessor, context: {hostname: "host"}})
+theConsoleChannel.write("message")
+	```
 - The key `level` has a handler which bind message level to `debug` if no already exist.
 
 	```js
@@ -33,7 +70,6 @@ const theMessage = new LoggerMessage()
 const theProcessor = new LoggerProcessor()
 console.log(theProcessor.execute(null, theMessage).get("pri"))
 	```
-
 - The key `pub` has a handler which sets message pub to the current context id.
 
 	```js
@@ -42,7 +78,6 @@ const theMessage = new LoggerMessage()
 const theProcessor = new LoggerProcessor()
 console.log(theProcessor.execute(theChannel, theMessage).get("pub"))
 	```
-
 - The key `timestamp` has a handler which sets message timestamp to current ISO string.
 
 	```js
